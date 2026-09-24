@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*33 user turns. Tool outputs and reasoning omitted.*
+*34 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -445,5 +445,45 @@ list position would still matter
 - 🔧 `Edit` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/my_choice.py
 - 🔧 `Edit` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/my_choice.py
 - 🔧 `Bash` — Check the rule compiles and show it
+I wrote `my_choice()` in `my_choice.py` from your answers:
+
+```python
+    taste = step("taste share: true popularity scaled to sum to 1",
+                 normalize([TRUE_POPULARITY[artist] for artist in shown]))
+
+    # Each doubling of downloads multiplies the pull by 1.5, so the pull is count ** log2(1.5).
+    # An artist with no downloads gets half the pull of an artist with one download.
+    pulls = []
+    for artist in shown:
+        count = counts.get(artist, 0)
+        pulls.append(0.5 if count == 0 else count ** math.log2(1.5))
+    pulls = step("count pull: 0.5 for no downloads, else downloads ** log2(1.5)", pulls)
+    social = step("social share: the count pulls scaled to sum to 1", normalize(pulls))
+
+    # An even mix: social_influence of the social share, the rest from taste.
+    mixed = step("mix: (1 - social_influence) * taste + social_influence * social",
+                 [(1 - social_influence) * t + social_influence * s
+                  for t, s in zip(taste, social)])
+
+    # Position pull drops evenly from 1 at the top spot to 0.5 at the fifth.
+    last = len(shown) - 1
+    position = step("position pull: 1 at the top, dropping evenly to 0.5 at the bottom",
+                    [1 - 0.5 * i / last if last > 0 else 1 for i in range(len(shown))])
+    weighted = step("mix times position pull", [m * p for m, p in zip(mixed, position)])
+    return step("chance: the weighted mix scaled to sum to 1", normalize(weighted))
+```
+
+The chances have to add up to 1, so each share is divided by the total of the five. `normalize()` in `choose.py` does that.
+
+For the "Your rule in your words" slot: how would you describe this rule in your own words? One sentence is enough.
+
+**User:**
+My rule emcompasses my own intuition when I am exploring music. I think I am drawn to popular artists out of familiarity, so I gave top artists high influence that drops evenly down the board. This gives middle ground artists a fair chance and it ensures that social influence doesn't have too much of a pull on my music taste.
+
+**Claude:**
+- 🔧 `Read` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Edit` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Print the hand-check case
+- 🔧 `Read` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/WRITEUP.md
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
