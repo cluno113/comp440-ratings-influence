@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*3 user turns. Tool outputs and reasoning omitted.*
+*4 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -65,5 +65,17 @@ Setup is done. Part 0 is current. Here are the four predictions, and a word or a
 2. As people pay more attention to the counts, does inequality between the artists rise or fall?
 3. Does the best artist (true popularity 100) ever lose a world?
 4. Can a recommender rule lower inequality without making the outcome track true taste less well?
+
+**User:**
+what do i do?
+
+**Claude:**
+Just give your best guess for each of the four questions. There are no right or wrong answers here, and you don't need reasons. A word or a short line each is plenty. For example, for question 3 you could just say "yes" or "no."
+
+Some background: there are eleven artists, and each has a hidden "true popularity," with the best at 100. Many separate "worlds" of users each download songs. In some setups, users can see how many downloads each artist already has. The questions ask what you think happens when they can.
+
+I'll write your guesses in exactly as you say them and commit them. After that they stay fixed, and later you'll compare them with the results.
+
+What are your four guesses?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
