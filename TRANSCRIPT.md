@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*23 user turns. Tool outputs and reasoning omitted.*
+*24 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -364,5 +364,14 @@ A artist nearer to the top of the list should be more likely to be picked. Middl
 Got it: artists nearer the top are more likely to be picked. I'll ask what "middle ground is fun to explore" means for the code once all four are in.
 
 Last one, and a line is enough: how should `social_influence`, from 0 to 1, set the mix between the counts and the user's own taste?
+
+**User:**
+social_influence should be set at 0.5 between the counts and the user's own taste.
+
+**Claude:**
+- 🔧 `Bash` — Read choice rule files, README Part 3, and sim
+Here's one thing about the code that bears on your answer. `social_influence` is handed to your rule, not set by it. Part 3 runs your rule at 0, 0.25, 0.5, 0.75 and 1, and the rule's docstring says 0 means users ignore the counts and 1 means they go by the counts alone. So the rule needs to say what happens at every level, not only at 0.5.
+
+At 0.5, you want half counts and half taste. What should happen as `social_influence` moves from 0 up to 1?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
