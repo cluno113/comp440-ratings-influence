@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*27 user turns. Tool outputs and reasoning omitted.*
+*28 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -397,5 +397,13 @@ Less than twice. 1.5 times.
 Got it: twice the downloads gives 1.5 times the pull.
 
 To pin down the pattern: should four times the downloads give 1.5 × 1.5 = 2.25 times the pull, so that every doubling multiplies it by 1.5?
+
+**User:**
+Sure
+
+**Claude:**
+Got it: every doubling of downloads multiplies the pull by 1.5.
+
+Next, about artists with no downloads being picked "infrequently". From the counts alone, how much pull should an artist with no downloads get compared with an artist with one download? For example, about half as much, or much less?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
