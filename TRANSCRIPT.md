@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*52 user turns. Tool outputs and reasoning omitted.*
+*53 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -812,5 +812,43 @@ I replaced the Part 3 "Your rule in your words" slot. It now says: "I initially 
 Next, I'll run your rule at social influence 0, 0.25, 0.5, 0.75 and 1. There will be two figures, each plotted against social influence: Gini, and unpredictability.
 
 Before the run: what shape do you expect those two curves to have? A line is enough.
+
+**User:**
+I think that it would be more equal because my rule gives music underdogs a chance.
+
+**Claude:**
+- 🔧 `Edit` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Run Part 3 social influence sweep
+- 🔧 `Read` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 3 "shape you expect" slot: "I think that it would be more equal because my rule gives music underdogs a chance."
+
+Here's the output of `part3_influence.py`:
+
+```
+The independent control (random_five, social influence 0), then top_five at each level; 300 worlds per row:
+                       Gini  unpredictability  fidelity  true best wins  accidental hits
+independent control    0.277             0.010     0.976           0.590            0.000
+social influence 0.0   0.638             0.086     0.503           0.570            0.000
+social influence 0.25  0.625             0.094     0.408           0.480            0.000
+social influence 0.5   0.602             0.099     0.344           0.473            0.000
+social influence 0.75  0.578             0.101     0.259           0.323            0.000
+social influence 1.0   0.560             0.102     0.024           0.103            0.310
+
+Saved figures/part3_gini.png and figures/part3_unpredictability.png
+
+Your Part 0 predictions, as WRITEUP.md has them:
+  1. Once people can see the counts, which artist wins most often?
+      Once people can see the download counts, the inequality of downloads of the most popular (100) and the least, will be drastic with most downloads going towards the top 100.
+  2. Does inequality rise or fall with social influence?
+      Inequality will rise with social influence as people tend to trust what gets recommended to them. The stand out songs will be streamed more commonly.
+  3. Does the best artist ever lose a world?
+      Yes, it is possible for a best artist to lose a world because music taste is subjective, but out of 100 artists there will be a clear more popular, versus least popular. I doubt that a top artist will ever be the least popular in any world.
+  4. Can a recommender lower inequality without lowering fidelity to true taste?
+      A recommender rule can lower inequality without making the outcome track less well by highlighting popular artists from a variety of genres.
+```
+
+`figures/part3_gini.png` plots mean Gini against social influence. `figures/part3_unpredictability.png` plots unpredictability against social influence. In both, a square marks the independent control.
+
+A question about your rule: with the doubling factor at 1, does an artist with 500 downloads get more pull from the counts than an artist with 1 download?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
