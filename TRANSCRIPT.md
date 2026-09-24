@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*38 user turns. Tool outputs and reasoning omitted.*
+*39 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -557,5 +557,13 @@ I would lessen the influence of the top artist.
 
 **Claude:**
 "The top artist" could mean two different steps in your rule. Which one do you want to lessen: the pull from being at the top of the list (position), or the pull from having more downloads (counts)?
+
+**User:**
+Pull from having more downloads should have less influence.
+
+**Claude:**
+Got it: the pull from downloads should be weaker.
+
+Right now, every doubling of downloads multiplies the pull by 1.5. What should that number be instead? Remember that 1 would mean downloads add no pull at all.
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
