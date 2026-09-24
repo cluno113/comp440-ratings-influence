@@ -31,11 +31,11 @@ Code: `part1_independent.py`. Figure: `figures/part1_strip.png`.
 
 Code: `recommender.py`, `part2_recommender.py`. Figure: `figures/part2_strip.png`.
 
-**The capabilities and limitations of `top_five`, in your words:** XXXX
+**The capabilities and limitations of `top_five`, in your words:** top_five shows the five most-downloaded artists with the most downloaded first (based on download counts). Then, it adds random artists only while fewer than five artists have any downloads. After that, its just the top five in order. The limitations are that it will keep the most popular artist in its mix, making it hard for allowing artists that are close to the top to be considered in the shuffle.
 
-**What Claude corrected in your reading, in your words, or "nothing":** XXXX
+**What Claude corrected in your reading, in your words, or "nothing":** It corrected my interpretation of how top_five incorporated the randomizing aspect.
 
-**What changed against Part 1, one sentence:** XXXX
+**What changed against Part 1, one sentence:** The inequality got worse as well as the unpredictability between other worlds.
 
 ## Part 3. Social influence
 
