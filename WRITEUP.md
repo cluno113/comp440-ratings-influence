@@ -23,9 +23,9 @@ Answered before anything runs. Claude writes them in as you said them, and they 
 
 Code: `part1_independent.py`. Figure: `figures/part1_strip.png`.
 
-**What Gini and unpredictability each show, in your own words:** XXXX
+**What Gini and unpredictability each show, in your own words:** Gini and unpredicability both measure the inequality between a popular artist and an unpopular artist's streams. The Gini index reveals the inequality of streams distributed across artists within a world. The unpreditability is how much an artist's share differs between worlds. The Gini of .277 shows that there is variability with streams across artists. But the unpredictability goes to show how a popular artist remains popular across different worlds.
 
-**What the figure shows, one sentence:** XXXX
+**What the figure shows, one sentence:** The figure shows how the top artists ranked in artist popularity receive more downloads while less popular artists receive less downloads.
 
 ## Part 2. The recommender
 
