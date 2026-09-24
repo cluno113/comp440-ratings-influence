@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*26 user turns. Tool outputs and reasoning omitted.*
+*27 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -389,5 +389,13 @@ That shift should be even, so quarter counts and three-quarters taste.
 Got it: the shift is even.
 
 Next, about favoring artists with more downloads "not super strongly": should an artist with twice the downloads get about twice the pull from the counts, or less than twice?
+
+**User:**
+Less than twice. 1.5 times.
+
+**Claude:**
+Got it: twice the downloads gives 1.5 times the pull.
+
+To pin down the pattern: should four times the downloads give 1.5 × 1.5 = 2.25 times the pull, so that every doubling multiplies it by 1.5?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
