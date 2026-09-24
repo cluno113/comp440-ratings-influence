@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*25 user turns. Tool outputs and reasoning omitted.*
+*26 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -381,5 +381,13 @@ If social_influence moves from 0 up to 1, we would see less of the user's taste 
 Got it: as `social_influence` goes up, taste counts less and the download counts count more.
 
 Should that shift be even, so that 0.25 means a quarter counts and three-quarters taste? Or should it change faster at one end?
+
+**User:**
+That shift should be even, so quarter counts and three-quarters taste.
+
+**Claude:**
+Got it: the shift is even.
+
+Next, about favoring artists with more downloads "not super strongly": should an artist with twice the downloads get about twice the pull from the counts, or less than twice?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
