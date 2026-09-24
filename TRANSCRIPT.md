@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*2 user turns. Tool outputs and reasoning omitted.*
+*3 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -25,5 +25,45 @@ yes
 - 🔧 `Skill` — setup
 - 🔧 `Bash` — List git remotes
 - 🔧 `Bash` — Add upstream remote, install dependencies, check measures
+Here's what I ran:
+
+```
+git remote add upstream https://github.com/shilad/comp440-ratings-influence
+uv sync
+uv run python measures.py
+```
+
+Output of `uv sync` (last lines) and `measures.py`:
+
+```
+Resolved 13 packages in 16ms
+Checked 12 packages in 3ms
+ok    Gini of [1, 0, 0, 0], one artist has everything: 3/4: expected 0.7500, computed 0.7500
+ok    Gini of eleven equal shares: 0: expected 0.0000, computed 0.0000
+ok    Gini of true popularity itself, as shares: expected 0.3010, computed 0.3010
+ok    Unpredictability, two worlds each won entirely by a different artist: 2/11: expected 0.1818, computed 0.1818
+ok    Unpredictability, three worlds of two artists, pair differences 0.2, 0.4, 0.2: expected 0.2667, computed 0.2667
+```
+
+That's five `ok` lines, so the install works.
+
+What name should I put at the top of `WRITEUP.md`?
+
+**User:**
+Claire Kuno
+
+**Claude:**
+- 🔧 `Bash` — Find name and date lines in writeup
+- 🔧 `Read` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Edit` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Commit name and date
+I filled in `**Name:** Claire Kuno` and `**Date:** 2026-09-24` and committed that as `Name and date`.
+
+Setup is done. Part 0 is current. Here are the four predictions, and a word or a line each is enough:
+
+1. Once people can see the download counts, which artist ends up with the most downloads in most worlds?
+2. As people pay more attention to the counts, does inequality between the artists rise or fall?
+3. Does the best artist (true popularity 100) ever lose a world?
+4. Can a recommender rule lower inequality without making the outcome track true taste less well?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
