@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*21 user turns. Tool outputs and reasoning omitted.*
+*22 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -348,5 +348,13 @@ A user should favor artists with more downloads, but not super strongly.
 Got it for the first one. I'll come back to how strongly once all four are answered.
 
 Next, and a word is enough: can an artist with no downloads be picked?
+
+**User:**
+Yes, an artist with no downlaods can be picked, infrequently.
+
+**Claude:**
+Got it: an artist with no downloads can be picked, but not often.
+
+Next, and a word is enough: should an artist nearer the top of the list be more likely to be picked?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
