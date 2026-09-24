@@ -11,13 +11,13 @@ answer; the follow-up slots at the end are optional.
 
 Answered before anything runs. Claude writes them in as you said them, and they stay as written.
 
-**1. Once people can see the counts, which artist wins most often?** XXXX
+**1. Once people can see the counts, which artist wins most often?** Once people can see the download counts, the inequality of downloads of the most popular (100) and the least, will be drastic with most downloads going towards the top 100.
 
-**2. Does inequality rise or fall with social influence?** XXXX
+**2. Does inequality rise or fall with social influence?** Inequality will rise with social influence as people tend to trust what gets recommended to them. The stand out songs will be streamed more commonly.
 
-**3. Does the best artist ever lose a world?** XXXX
+**3. Does the best artist ever lose a world?** Yes, it is possible for a best artist to lose a world because music taste is subjective, but out of 100 artists there will be a clear more popular, versus least popular. I doubt that a top artist will ever be the least popular in any world.
 
-**4. Can a recommender lower inequality without lowering fidelity to true taste?** XXXX
+**4. Can a recommender lower inequality without lowering fidelity to true taste?** A recommender rule can lower inequality without making the outcome track less well by highlighting popular artists from a variety of genres.
 
 ## Part 1. Users on their own
 
