@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*29 user turns. Tool outputs and reasoning omitted.*
+*30 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -413,5 +413,13 @@ about half as much
 Got it: an artist with no downloads gets half the pull of an artist with one download.
 
 Now the list position. You said artists nearer the top should be more likely to be picked, and that "middle ground is fun to explore." What does the middle-ground part mean for the rule?
+
+**User:**
+the 50th to the 75th percentile of artists should have more pull than anything below.
+
+**Claude:**
+Here's what that means for the list: there are five spots, so the middle spots (2nd and 3rd) should have more pull than the bottom ones (4th and 5th), with the top spot the most likely of all.
+
+How strong should that be? Should the top spot have about twice the pull of the fifth spot, or much more than that?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
