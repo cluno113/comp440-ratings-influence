@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*22 user turns. Tool outputs and reasoning omitted.*
+*23 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -356,5 +356,13 @@ Yes, an artist with no downlaods can be picked, infrequently.
 Got it: an artist with no downloads can be picked, but not often.
 
 Next, and a word is enough: should an artist nearer the top of the list be more likely to be picked?
+
+**User:**
+A artist nearer to the top of the list should be more likely to be picked. Middle ground is fun to explore.
+
+**Claude:**
+Got it: artists nearer the top are more likely to be picked. I'll ask what "middle ground is fun to explore" means for the code once all four are in.
+
+Last one, and a line is enough: how should `social_influence`, from 0 to 1, set the mix between the counts and the user's own taste?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
