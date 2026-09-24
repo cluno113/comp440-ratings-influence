@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*28 user turns. Tool outputs and reasoning omitted.*
+*29 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -405,5 +405,13 @@ Sure
 Got it: every doubling of downloads multiplies the pull by 1.5.
 
 Next, about artists with no downloads being picked "infrequently". From the counts alone, how much pull should an artist with no downloads get compared with an artist with one download? For example, about half as much, or much less?
+
+**User:**
+about half as much
+
+**Claude:**
+Got it: an artist with no downloads gets half the pull of an artist with one download.
+
+Now the list position. You said artists nearer the top should be more likely to be picked, and that "middle ground is fun to explore." What does the middle-ground part mean for the rule?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
