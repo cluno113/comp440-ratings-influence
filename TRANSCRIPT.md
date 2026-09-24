@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*20 user turns. Tool outputs and reasoning omitted.*
+*21 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -329,5 +329,24 @@ I replaced your earlier sentence in the Part 2 "What changed" slot. It now says:
 
 **User:**
 Yes
+
+**Claude:**
+- 🔧 `Bash` — Commit Part 2
+I committed that as `Part 2 done`.
+
+Part 3 is about social influence. Now users can see the download counts, and you design the rule for how they choose. There's no single right rule. Answer these four design questions, and a line each is enough:
+
+- Should a user favor artists with more downloads? How strongly?
+- Can an artist with no downloads be picked?
+- Should an artist nearer the top of the list be more likely to be picked?
+- How should `social_influence`, from 0 to 1, set the mix between the counts and the user's own taste?
+
+**User:**
+A user should favor artists with more downloads, but not super strongly.
+
+**Claude:**
+Got it for the first one. I'll come back to how strongly once all four are answered.
+
+Next, and a word is enough: can an artist with no downloads be picked?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
