@@ -7,7 +7,7 @@ summarized as one-liners.
 <!-- transcript-session: 25530ad5-2c00-4625-aa91-c636841a8639 | 2026-09-24T18:57:35.867Z -->
 ## Session `25530ad5` — 2026-09-24 18:57:35
 
-*7 user turns. Tool outputs and reasoning omitted.*
+*8 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 open the project in vs code
@@ -110,5 +110,18 @@ I wrote this into the Part 0 slot for question 3: "Yes, it is possible for a bes
 A note on the setup, since predictions are locked once committed: there are eleven artists, and 100 is the best artist's true popularity score. You can keep your answer exactly as written or reword it.
 
 Question 4 is last, and one line is enough: can a recommender rule lower inequality without making the outcome track true taste less well?
+
+**User:**
+4. A recommender rule can lower inequality without making the outcome track less well by highlighting popular artists from a variety of genres.
+
+**Claude:**
+- 🔧 `Edit` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/clairekuno/Documents/Github/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Commit Part 0 predictions
+I wrote this into the Part 0 slot for question 4: "A recommender rule can lower inequality without making the outcome track less well by highlighting popular artists from a variety of genres."
+
+All four predictions are in, and I committed them as `Part 0 predictions`. They're now locked. If you change your mind later, that goes in Part 3's "Revisited" slot.
+
+Part 1 is next: I'll run a simulation where users pick artists on their own, without seeing any download counts. Ready for me to run it?
 
 <!-- end-session: 25530ad5-2c00-4625-aa91-c636841a8639 -->
