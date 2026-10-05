@@ -42,19 +42,19 @@ Code: `recommender.py`, `part2_recommender.py`. Figure: `figures/part2_strip.png
 Code: `my_choice.py`, `hand_check.py`, `part3_influence.py`. Figures: `figures/part3_gini.png`,
 `figures/part3_unpredictability.png`.
 
-**Your rule in your words:** XXXX
+**Your rule in your words:** I initially wanted popularity in download counts and position to matter, but the artists chosen in the hand-check left me with insane biase towards Justin Bieber. So, I changed my rule to ensure that my rule would pick Justin.
 
-**Hand check, before the table: which artist your rule should favor, and by a little or a lot:** XXXX
+**Hand check, before the table: which artist your rule should favor, and by a little or a lot:** My ryle should favor Justin Bieber. By a lot.
 
-**Hand check: whether the table matched what you said:** XXXX
+**Hand check: whether the table matched what you said:** No it does not.
 
-**The shape you expect the two curves to have, as you told Claude before the run:** XXXX
+**The shape you expect the two curves to have, as you told Claude before the run:** I think that it would be more equal because my rule gives music underdogs a chance.
 
-**What you changed in your rule, at the hand check or after the run, or "nothing":** XXXX
+**What you changed in your rule, at the hand check or after the run, or "nothing":** I changed the most influential artist pool by moving from considering popularity, to targetting the 30th percentile.
 
-**What the two curves show against the paper's Figures 1 and 2, in one or two sentences:** XXXX
+**What the two curves show against the paper's Figures 1 and 2, in one or two sentences:** It is doing the opposite now where social influence decreases inequality because I am highlighting artist who would have typically gotten extremely unpopular with a rise in social influence.
 
-**Revisited: which of your Part 0 predictions you would now change, and why:** XXXX
+**Revisited: which of your Part 0 predictions you would now change, and why:** I would change 2. as inequality will fall with social influence. 3. because a best artist is chosen at the 30th percentile.
 
 ## Part 4. Your recommender
 
