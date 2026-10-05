@@ -68,9 +68,9 @@ Code: `my_recommender.py`, `part4_recommender.py`. Figure: `figures/part4_recomm
 
 ## Part 5. Reflection
 
-**Where this shows up in data you have already handled, or in an interface you use, one sentence:** XXXX
+**Where this shows up in data you have already handled, or in an interface you use, one sentence:** This shows up consistently across every app I use. From depop to instagram, I feel like cycling through different parcels of content reveals patterns that I can detect by looking at number of likes or time things are posted
 
-**A moment Claude was wrong or overconfident, or a judgment you kept for yourself, one sentence:** XXXX
+**A moment Claude was wrong or overconfident, or a judgment you kept for yourself, one sentence:** A moment Claude was overconfident was when it kept asking me to answer questions with one word or sentence. Whenever I would do so, it would never be enough context for claude to build an algorithm.
 
 ## Follow-ups
 
