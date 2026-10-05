@@ -60,11 +60,11 @@ Code: `my_choice.py`, `hand_check.py`, `part3_influence.py`. Figures: `figures/p
 
 Code: `my_recommender.py`, `part4_recommender.py`. Figure: `figures/part4_recommenders.png`.
 
-**Your rule in words, before any code:** XXXX
+**Your rule in words, before any code:** My rule looks at artists closest to the 30th percentile in popularity of downloads.
 
-**What you expect it to do to inequality, unpredictability and fidelity, as you told Claude before the run:** XXXX
+**What you expect it to do to inequality, unpredictability and fidelity, as you told Claude before the run:** I believe it will decrease inequality by highlighting those who are not given recognition when social influences hikes up the downloads of already popular artists. It will be unpredictable in its randomness in choosing between artists. But, will consistently produce the same range of artists.
 
-**What it bought and what it cost, one sentence:** XXXX
+**What it bought and what it cost, one sentence:** My rule actively pushes against social influence with a higher Gini score than the random_five. But, it cost is seen in the fidelity where highlighting only the 30th percentile misses out on good popular artists.
 
 ## Part 5. Reflection
 
